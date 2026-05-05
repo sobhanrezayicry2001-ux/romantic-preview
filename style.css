@@ -39,12 +39,11 @@ body {
 }
 
 #animatedText {
-  font-size: 28px; /* بزرگتر شد */
-  font-family: 'Georgia', serif; /* فونت کمی رسمی‌تر و جذاب */
+  font-size: 60px; /* دو برابر شد */
   margin-top: 10px;
-  min-height: 140px;
+  min-height: 300px; /* ارتفاع متن برای بزرگ شدن */
   white-space: pre-wrap;
-  color: #ffdd57; /* رنگ گرم و دلنشین */
+  color: #ff9966;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-  line-height: 1.6; /* فاصله بین خطوط بهتر */
+  line-height: 1.6;
 }
