@@ -5,18 +5,17 @@ body {
   overflow: hidden;
 }
 
-/* صفحه شروع */
 #container {
   position: relative;
   width: 100%;
   height: 100%;
+  background: linear-gradient(135deg, #ff4d6d, #7b2cbf, #3a86ff);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #ff4d6d, #7b2cbf, #3a86ff);
 }
 
-/* دکمه شروع */
+/* دکمه */
 #startBtn {
   position: absolute;
   z-index: 2;
@@ -42,14 +41,14 @@ body {
   transition: opacity 2s ease-in;
 }
 
-/* متن انگلیسی */
+/* متن اصلاح‌شده کامل */
 #animatedText {
   position: absolute;
   top: 55%;
   left: 5%;
   width: 90%;
 
-  text-align: left;
+  text-align: left !important;
   direction: ltr;
 
   font-family: 'Great Vibes', cursive;
@@ -59,5 +58,5 @@ body {
   z-index: 2;
 
   text-shadow: 0 0 20px rgba(0,0,0,0.8);
-  white-space: pre-line;
+  white-space: pre-wrap;
 }
