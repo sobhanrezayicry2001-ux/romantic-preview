@@ -12,6 +12,7 @@ body {
 
 #container {
   text-align: center;
+  position: relative;
 }
 
 #startBtn {
@@ -22,6 +23,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 10;
 }
 
 #startBtn:hover {
@@ -29,21 +31,31 @@ body {
   transform: scale(1.1);
 }
 
+#imageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
 #screenshot {
   display: none;
   max-width: 90%;
-  margin-top: 20px;
   border-radius: 12px;
   opacity: 0;
   transition: opacity 2s ease-in;
 }
 
 #animatedText {
-  font-size: 60px; /* دو برابر شد */
-  margin-top: 10px;
-  min-height: 300px; /* ارتفاع متن برای بزرگ شدن */
+  position: absolute;
+  top: 50%; /* شروع از وسط تصویر */
+  left: 50%;
+  transform: translate(-50%, -50%); /* دقیقاً وسط تصویر */
+  font-size: 60px; /* دوبرابر قبلی */
+  font-family: 'Georgia', serif;
   white-space: pre-wrap;
-  color: #ff9966;
+  color: #ff9966; /* رنگ دلنشین */
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   line-height: 1.6;
+  text-align: right; /* راست‌چین */
+  direction: rtl; /* جهت متن راست به چپ */
+  max-width: 90%; /* محدود کردن پهنای متن */
 }
