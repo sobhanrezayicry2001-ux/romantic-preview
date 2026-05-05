@@ -3,7 +3,12 @@ const screenshot = document.getElementById('screenshot');
 const music = document.getElementById('music');
 const animatedText = document.getElementById('animatedText');
 
-const textToShow = "ملیکا هنر یعنی یه فضا رو انقدر قشنگ بسازی ک ادم روحش اونجا زندانی بشه. من زندانی شماره 0668 هستم. می خوام به یه دیت دعوتت کنم تا بیشتر در مورد حبس طولانی تر در این فضا صحبت کنیم.";
+const textToShow = 
+`ملیکا، هنر یعنی یه فضا رو انقدر قشنگ بسازی
+که آدم روحش اونجا زندانی بشه.
+من زندانی شماره 0668 هستم.
+می خوام به یه دیت دعوتت کنم
+تا بیشتر در مورد حبس طولانی‌تر در این فضا صحبت کنیم.`;
 
 startBtn.addEventListener('click', () => {
   startBtn.style.display = 'none';
@@ -18,7 +23,7 @@ startBtn.addEventListener('click', () => {
 
   // تایپ متن با مدت زمان 20 ثانیه
   let index = 0;
-  const duration = 20000; // 20 ثانیه
+  const duration = 20000;
   const interval = duration / textToShow.length;
 
   const typing = setInterval(() => {
