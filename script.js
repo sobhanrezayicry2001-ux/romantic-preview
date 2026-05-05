@@ -13,13 +13,16 @@ startBtn.addEventListener('click', () => {
 
   startBtn.style.display = 'none';
 
+  // نمایش تصویر
   screenshot.style.display = 'block';
   setTimeout(() => {
     screenshot.style.opacity = 1;
   }, 50);
 
+  // پخش موزیک
   music.play().catch(() => {});
 
+  // تایپ متن
   let index = 0;
   const speed = 60;
 
