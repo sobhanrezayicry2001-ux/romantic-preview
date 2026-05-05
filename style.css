@@ -1,71 +1,50 @@
-/* عمومی */
 body {
   margin: 0;
-  height: 100vh;
-  font-family: 'Vazir', Tahoma, Geneva, sans-serif;
-  background-color: #ffe6f0;
+  padding: 0;
+  font-family: 'Cursive', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffb6c1, #dda0dd);
+  color: #fff;
 }
 
-/* کانتینر */
 #container {
-  width: 100%;
-  height: 100%;
-  position: relative;
   text-align: center;
 }
 
-/* دکمه Start */
 #startBtn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 28px;
   padding: 15px 30px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  background-color: #ff99c8;
-  border: none;
+  background-color: rgba(255,255,255,0.3);
+  border: 2px solid #fff;
   border-radius: 12px;
-  color: white;
-  transition: background 0.3s, transform 0.3s;
-  z-index: 3;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 #startBtn:hover {
-  background-color: #ff4da6;
-  transform: translate(-50%, -50%) scale(1.1);
+  background-color: rgba(255,255,255,0.5);
+  transform: scale(1.1);
 }
 
-/* تصویر */
 #screenshot {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
   display: none;
+  max-width: 90%;
+  margin-top: 20px;
+  border-radius: 12px;
   opacity: 0;
-  transition: opacity 2s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  transition: opacity 2s ease-in;
 }
 
-/* متن رمانتیک */
 #animatedText {
-  font-family: 'Vazir', Tahoma, Geneva, sans-serif;
-  font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 20%;
-  width: 90%;
-  left: 5%;
-  text-align: right;
-  direction: rtl;
-  z-index: 2;
-  line-height: 1.6;
-  min-height: 100px;
+  font-size: 28px; /* بزرگتر شد */
+  font-family: 'Georgia', serif; /* فونت کمی رسمی‌تر و جذاب */
+  margin-top: 10px;
+  min-height: 140px;
+  white-space: pre-wrap;
+  color: #ffdd57; /* رنگ گرم و دلنشین */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  line-height: 1.6; /* فاصله بین خطوط بهتر */
 }
