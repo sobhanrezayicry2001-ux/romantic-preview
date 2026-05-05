@@ -1,12 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   height: 100vh;
   overflow: hidden;
 }
 
-/* بک‌گراند شروع (صورتی → بنفش/آبی) */
 #container {
   position: relative;
   width: 100%;
@@ -17,7 +15,6 @@ body {
   background: linear-gradient(135deg, #ff4d6d, #7b2cbf, #3a86ff);
 }
 
-/* دکمه */
 #startBtn {
   position: absolute;
   z-index: 2;
@@ -30,7 +27,6 @@ body {
   cursor: pointer;
 }
 
-/* تصویر فول‌اسکرین */
 #screenshot {
   position: fixed;
   top: 0;
@@ -43,16 +39,19 @@ body {
   transition: opacity 2s ease-in;
 }
 
-/* متن */
 #animatedText {
   position: absolute;
-  top: 55%; /* از وسط تصویر شروع بشه */
+  top: 55%;
   right: 5%;
   width: 90%;
-  text-align: right; /* راست‌چین */
-  font-size: 50px; /* 2.5 برابر */
-  color: #ffd6ff; /* رنگ جدید */
+  text-align: right;
+
+  font-family: 'Great Vibes', cursive; /* فونت خاص */
+  font-size: 60px;
+
+  color: #ffd6ff;
   z-index: 2;
-  text-shadow: 0 0 15px black;
+
+  text-shadow: 0 0 20px rgba(0,0,0,0.8);
   white-space: pre-line;
 }
