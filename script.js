@@ -13,24 +13,24 @@ startBtn.addEventListener('click', () => {
 
   startBtn.style.display = 'none';
 
-  // نمایش تصویر
+  // تصویر فول‌اسکرین
   screenshot.style.display = 'block';
   setTimeout(() => {
     screenshot.style.opacity = 1;
   }, 50);
 
-  // پخش موزیک
+  // موزیک
   music.play().catch(() => {});
 
-  // تایپ متن
+  // تایپ تمیز از چپ به راست
   let index = 0;
-  const speed = 60;
+  animatedText.textContent = "";
 
   function typeText() {
     if (index < textToShow.length) {
-      animatedText.textContent += textToShow[index];
+      animatedText.textContent = textToShow.substring(0, index + 1);
       index++;
-      setTimeout(typeText, speed);
+      setTimeout(typeText, 50);
     }
   }
 
