@@ -5,7 +5,8 @@ const animatedText = document.getElementById('animatedText');
 
 const textToShow = `این لحظه برای توست…
 لحظه‌ای پر از آرامش و عشق
-که با هم تجربه می‌کنیم.`;
+که با هم تجربه می‌کنیم
+فقط تو و من`;
 
 startBtn.addEventListener('click', () => {
 
