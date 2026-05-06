@@ -15,12 +15,15 @@ body {
   align-items: center;
 }
 
-/* دکمه */
+/* دکمه با فونت خاص */
 #startBtn {
   position: absolute;
   z-index: 2;
-  font-size: 28px;
-  padding: 15px 30px;
+  font-size: 40px;
+  padding: 15px 35px;
+
+  font-family: 'Great Vibes', cursive;
+
   background: linear-gradient(135deg, #ff4d6d, #3a86ff);
   color: white;
   border: none;
@@ -28,7 +31,7 @@ body {
   cursor: pointer;
 }
 
-/* تصویر فول‌اسکرین */
+/* تصویر */
 #screenshot {
   position: fixed;
   top: 0;
@@ -41,14 +44,14 @@ body {
   transition: opacity 2s ease-in;
 }
 
-/* متن اصلاح‌شده کامل */
+/* متن */
 #animatedText {
   position: absolute;
   top: 55%;
   left: 5%;
   width: 90%;
 
-  text-align: left !important;
+  text-align: left;
   direction: ltr;
 
   font-family: 'Great Vibes', cursive;
@@ -58,5 +61,5 @@ body {
   z-index: 2;
 
   text-shadow: 0 0 20px rgba(0,0,0,0.8);
-  white-space: pre-wrap;
+  white-space: pre-line;
 }
