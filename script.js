@@ -1,6 +1,10 @@
 const startBtn = document.getElementById('startBtn');
-const screenshot = document.getElementById('screenshot');
+
+const screenshot1 = document.getElementById('screenshot1');
+const screenshot2 = document.getElementById('screenshot2');
+
 const music = document.getElementById('music');
+
 const animatedText = document.getElementById('animatedText');
 
 const textToShow = `Melika, art is creating a space so beautiful and rare
@@ -12,34 +16,34 @@ and get to know you more — if you feel the same.`;
 
 startBtn.addEventListener('click', () => {
 
+  // حذف دکمه
   startBtn.style.display = 'none';
 
-  // 1️⃣ موزیک
+  // شروع موزیک
   music.play().catch(() => {});
 
-  // 2️⃣ بعد 1 ثانیه → تصویر
+  // بعد 1 ثانیه → عکس اول
   setTimeout(() => {
-    screenshot.style.display = 'block';
-
-    setTimeout(() => {
-      screenshot.style.opacity = 1;
-    }, 50);
-
+    screenshot1.style.opacity = 1;
   }, 1000);
 
-  // 3️⃣ بعد 2 ثانیه → شروع متن
+  // بعد 2 ثانیه → شروع متن
   setTimeout(() => {
 
     let index = 0;
-    animatedText.textContent = "";
 
-    const totalDuration = 20000; // 20 ثانیه
+    const totalDuration = 26000;
     const speed = totalDuration / textToShow.length;
 
     function typeText() {
+
       if (index < textToShow.length) {
-        animatedText.textContent = textToShow.substring(0, index + 1);
+
+        animatedText.textContent =
+          textToShow.substring(0, index + 1);
+
         index++;
+
         setTimeout(typeText, speed);
       }
     }
@@ -47,4 +51,14 @@ startBtn.addEventListener('click', () => {
     typeText();
 
   }, 2000);
+
+  // ثانیه 22 → تغییر آرام عکس
+  setTimeout(() => {
+
+    screenshot1.style.opacity = 0;
+
+    screenshot2.style.opacity = 1;
+
+  }, 22000);
+
 });
